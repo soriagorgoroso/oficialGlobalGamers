@@ -1,4 +1,3 @@
-import React from "react";
 import CanvasWrapper from "./components/three/CanvasWrapper";
 import Planet from "./components/three/Planet";
 import Background from "./components/three/BackGround";

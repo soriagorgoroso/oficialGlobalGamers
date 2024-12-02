@@ -9,7 +9,7 @@ interface CardProps {
   imageUrl?: string; // Imagen de fondo opcional
 }
 
-const Card: React.FC<CardProps> = ({ width = "300px", height = "200px", title, content, imageUrl }) => {
+const Card: React.FC<CardProps> = ({ width = "300px", height = "200px", content, imageUrl }) => {
   return (
     <div
       className="card"
