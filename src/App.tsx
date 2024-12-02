@@ -4,6 +4,7 @@ import Planet from "./components/three/Planet";
 import Background from "./components/three/BackGround";
 import "./App.css";
 import CardContainer from "./components/CardsContainer";
+import Navbar from "./components/NavBar";
 
 function App() {
   return (
@@ -12,7 +13,11 @@ function App() {
         <Background />
         <Planet />
       </CanvasWrapper>
-      <CardContainer/>
+      <div className="app" style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }}>
+      <Navbar />
+
+      <CardContainer />
+    </div>
     </div>
   );
 }

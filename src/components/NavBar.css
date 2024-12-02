@@ -1,0 +1,65 @@
+/* Contenedor principal del Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around; /* Espaciado entre botones y links */
+    align-items: center; /* Alinea verticalmente los elementos */
+    position: sticky; /* Se mantiene fijo en la parte superior al hacer scroll */
+    top: 0; /* Se pega a la parte superior */
+    z-index: 10; /* Aparece por encima de otros elementos */
+    width: 724px; /* Ocupa todo el ancho */
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente si no hay imagen */
+    border-radius: 8px;
+    margin-top: 40px;
+}
+  
+  /* Botones del lado izquierdo */
+  .navbar-left {
+    display: flex;
+    gap: 10px; /* Espaciado entre los botones */
+  }
+  
+  /* Botones estilo general */
+  .navbar-button {
+    padding: 10px 20px;
+    background-color: #e91e63; /* Color rosa */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .navbar-button:hover {
+    background-color: #d81b60; /* Color más oscuro al hover */
+  }
+  
+  .navbar-register {
+    background-color: #ff4081; /* Color rosa claro */
+  }
+  
+  .navbar-register:hover {
+    background-color: #f50057; /* Color más oscuro */
+  }
+  
+  /* Links del lado derecho */
+  .navbar-right {
+    display: flex;
+    gap: 20px; /* Espaciado entre los links */
+  }
+  
+  /* Links */
+  .navbar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.2s ease;
+  }
+  
+  .navbar-link:hover {
+    color: #ff4081; /* Cambia a rosa claro */
+  }
+  

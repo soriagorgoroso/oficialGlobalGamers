@@ -6,6 +6,18 @@ const CanvasWrapper: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
   return (
+    <div 
+    style={{
+      // backgroundColor:"green",
+      position: "absolute", // Asegura que ocupe toda la pantalla
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      zIndex: 0, // Coloca el Canvas detrás de otros elementos
+    }}
+    >
+      
     <Canvas
       camera={{ position: [0, 0, 10], fov: 60 }}
       style={{ width: "100vw", height: "100vh" }}
@@ -25,6 +37,7 @@ const CanvasWrapper: React.FC<{ children: React.ReactNode }> = ({
 
       {children}
     </Canvas>
+    </div>
   );
 };
 
